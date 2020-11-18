@@ -13,11 +13,13 @@ class Pelicula {
     var caratula: String
     var fecha: String
     var descripcion: String?
+    var actores: [String]?
     
-    init(titulo: String, caratula: String, fecha: String, descripcion: String?) {
+    init(titulo: String, caratula: String, fecha: String, descripcion: String?, actores: [String]?) {
         self.titulo = titulo
         self.caratula = caratula
         self.fecha = fecha
         self.descripcion = descripcion
+        self.actores = actores
     }
 }
