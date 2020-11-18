@@ -1,4 +1,4 @@
-# Popovers
+# Aplicaciones universales
 Capturas del ejercicio `ejercicio_universal`
 
 ![Captura 1](https://github.com/yasmanets/ios_iu/blob/main/7%20ejercicio_universal/captures/iphone_port.png)
