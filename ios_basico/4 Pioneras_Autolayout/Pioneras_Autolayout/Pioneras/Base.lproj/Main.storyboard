@@ -66,17 +66,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFz-gA-i2D">
-                                <rect key="frame" x="21" y="20" width="36" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFz-gA-i2D">
+                                <rect key="frame" x="189" y="812" width="36" height="30"/>
                                 <state key="normal" title="Atrás"/>
                                 <connections>
                                     <segue destination="QdI-CM-Wvl" kind="unwind" unwindAction="retornoDeSecundarioWithSegue:" id="7Fy-TW-QU2"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PBs-c5-dfR">
-                                <rect key="frame" x="16" y="58" width="343" height="355"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PBs-c5-dfR">
+                                <rect key="frame" x="16" y="271" width="382" height="354"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -85,6 +83,14 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PBs-c5-dfR" firstAttribute="top" secondItem="Adp-nU-f20" secondAttribute="top" constant="227" id="IWq-0e-HHT"/>
+                            <constraint firstItem="Adp-nU-f20" firstAttribute="bottom" secondItem="XFz-gA-i2D" secondAttribute="bottom" constant="20" id="KPN-0h-CEj"/>
+                            <constraint firstItem="PBs-c5-dfR" firstAttribute="centerY" secondItem="rRD-aK-qTp" secondAttribute="centerY" id="QSR-qC-jN7"/>
+                            <constraint firstItem="PBs-c5-dfR" firstAttribute="centerX" secondItem="XFz-gA-i2D" secondAttribute="centerX" id="i8N-RA-OrB"/>
+                            <constraint firstItem="PBs-c5-dfR" firstAttribute="centerX" secondItem="rRD-aK-qTp" secondAttribute="centerX" id="oW3-OH-SkQ"/>
+                            <constraint firstItem="PBs-c5-dfR" firstAttribute="leading" secondItem="Adp-nU-f20" secondAttribute="leading" constant="16" id="u8X-0L-ra2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Adp-nU-f20"/>
                     </view>
                     <navigationItem key="navigationItem" id="x4p-MA-rlv"/>
