@@ -13,6 +13,7 @@
 		4328FCF12566C50500036948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4328FCEF2566C50500036948 /* Main.storyboard */; };
 		4328FCF32566C50800036948 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4328FCF22566C50800036948 /* Assets.xcassets */; };
 		4328FCF62566C50800036948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4328FCF42566C50800036948 /* LaunchScreen.storyboard */; };
+		4328FCFE2566D7B900036948 /* TravelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328FCFD2566D7B900036948 /* TravelPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4328FCF22566C50800036948 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4328FCF52566C50800036948 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4328FCF72566C50800036948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4328FCFD2566D7B900036948 /* TravelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				4328FCEB2566C50500036948 /* SceneDelegate.swift */,
 				4328FCED2566C50500036948 /* ViewController.swift */,
 				4328FCEF2566C50500036948 /* Main.storyboard */,
+				4328FCFD2566D7B900036948 /* TravelPicker.swift */,
 				4328FCF22566C50800036948 /* Assets.xcassets */,
 				4328FCF42566C50800036948 /* LaunchScreen.storyboard */,
 				4328FCF72566C50800036948 /* Info.plist */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4328FCEE2566C50500036948 /* ViewController.swift in Sources */,
+				4328FCFE2566D7B900036948 /* TravelPicker.swift in Sources */,
 				4328FCEA2566C50500036948 /* AppDelegate.swift in Sources */,
 				4328FCEC2566C50500036948 /* SceneDelegate.swift in Sources */,
 			);

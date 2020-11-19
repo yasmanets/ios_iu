@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var velocityLabel: UILabel!
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var switchView: UISwitch!
+    @IBOutlet weak var travelPicker: UIPickerView!
+    let picker = TravelPicker()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,10 @@ class ViewController: UIViewController {
         velocityLabel?.text = "0"
         
         button?.tintColor = UIColor.red
+        
+        self.travelPicker.delegate = self.picker
+        self.travelPicker.dataSource = self.picker
+        
     }
     
     @IBAction func enterClicked(_ sender: UITextField) {
