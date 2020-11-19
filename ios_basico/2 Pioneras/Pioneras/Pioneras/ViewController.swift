@@ -18,6 +18,11 @@ class ViewController: UIViewController {
     @IBAction func retornoDeSecundario(segue: UIStoryboardSegue) {
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let controller = segue.destination as! SecundarioViewController
+        controller.nomFich = segue.identifier
+    }
 
 
 }

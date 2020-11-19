@@ -20,7 +20,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="lovelace"/>
                                 <connections>
-                                    <segue destination="QU6-7v-L8p" kind="show" id="VcQ-2e-h66"/>
+                                    <segue destination="djW-4a-te0" kind="show" identifier="lovelace" id="p1O-it-vJE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GqP-y4-zl5">
@@ -28,7 +28,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="hopper"/>
                                 <connections>
-                                    <segue destination="yoZ-IH-rCb" kind="show" id="jcJ-8h-dPC"/>
+                                    <segue destination="djW-4a-te0" kind="show" identifier="hopper" id="wBO-oM-2QB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSM-nL-sze">
@@ -36,7 +36,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="liskov"/>
                                 <connections>
-                                    <segue destination="XfW-xe-zFF" kind="show" id="pts-oK-ahS"/>
+                                    <segue destination="djW-4a-te0" kind="show" identifier="liskov" id="x7x-0f-gBt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -48,119 +48,49 @@
             </objects>
             <point key="canvasLocation" x="138.40000000000001" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="lvr-uJ-P70">
+        <!--Secundario View Controller-->
+        <scene sceneID="1YT-QC-P0M">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="QU6-7v-L8p" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UvF-Qq-L7B">
+                <viewController modalPresentationStyle="fullScreen" id="djW-4a-te0" customClass="SecundarioViewController" customModule="Pioneras" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rRD-aK-qTp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ce3-Y6-SVc">
-                                <rect key="frame" x="16" y="20" width="74" height="39"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFz-gA-i2D">
+                                <rect key="frame" x="21" y="20" width="36" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Atrás"/>
                                 <connections>
-                                    <segue destination="Ijy-cW-gQn" kind="unwind" unwindAction="retornoDeSecundarioWithSegue:" id="MaK-jo-YId"/>
+                                    <segue destination="QdI-CM-Wvl" kind="unwind" unwindAction="retornoDeSecundarioWithSegue:" id="7Fy-TW-QU2"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="kBP-OC-Zj9">
-                                <rect key="frame" x="16" y="52" width="343" height="371"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PBs-c5-dfR">
+                                <rect key="frame" x="16" y="58" width="343" height="355"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">Sugirió el uso de tarjetas perforadas como método de entrada de información e instrucciones a la máquina analítica. Además introdujo una notación para escribir programas, principalmente basada en el dominio que Ada tenía sobre el texto de Luigi Menabrea de 1842 (que comentó personalmente completándolo con anotaciones que son más extensas que el texto mismo) sobre el funcionamiento del telar de Jacquard así como de la máquina analítica de Babbage. Es reseñable además su mención sobre la existencia de ceros o estado neutro en las tarjetas perforadas siendo que las tarjetas representaban para la máquina de Babbage números decimales y no binarios (8 perforaciones equivaldrían entonces a 8 unidades).</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="wXf-xg-goT"/>
+                        <viewLayoutGuide key="safeArea" id="Adp-nU-f20"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zIa-iz-nWT"/>
+                    <navigationItem key="navigationItem" id="x4p-MA-rlv"/>
+                    <connections>
+                        <outlet property="textField" destination="PBs-c5-dfR" id="rVt-Gp-XLr"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wvm-df-56f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="Ijy-cW-gQn" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ee-lx-J1f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="QdI-CM-Wvl" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="919" y="-489"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="dPk-81-Xif">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="XfW-xe-zFF" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ABx-px-tAo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWI-js-EdX">
-                                <rect key="frame" x="16" y="20" width="74" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Atrás"/>
-                                <connections>
-                                    <segue destination="n6f-NS-VO7" kind="unwind" unwindAction="retornoDeSecundarioWithSegue:" id="snQ-qv-sts"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="tZa-Rv-1bY">
-                                <rect key="frame" x="16" y="67" width="343" height="371"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Ha dirigido varios proyectos significativos, como el diseño e implementación del lenguaje de programación CLU, el primer lenguaje de programación que soportaba la abstracción de datos, Argus, que fue el primer lenguaje de alto nivel en soportar la implementación de programas distribuidos y Thor, un sistema de base de datos orientado a objetos. Junto con Jeannette Wing, desarrolló una particular definición de subtipo, comúnmente conocido como el Principio de sustitución de Liskov.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="4N3-B3-jrk"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Tel-D2-hhm"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Gs-5E-8FH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="n6f-NS-VO7" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="919" y="161"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="itD-se-DFy">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="yoZ-IH-rCb" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TCb-um-SaK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wI0-3M-nRp">
-                                <rect key="frame" x="16" y="20" width="74" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Atrás"/>
-                                <connections>
-                                    <segue destination="UTL-HW-FoG" kind="unwind" unwindAction="retornoDeSecundarioWithSegue:" id="gKz-Uf-hTu"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="3zG-6O-Xfu">
-                                <rect key="frame" x="16" y="67" width="343" height="371"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">Fue la primera programadora que utilizó el Mark I y entre las décadas de los 50 y 60, desarrolló el primer compilador para un lenguaje de programación así como también propició métodos de validación.
-
-En 1952, desarrolló el primer compilador de la historia, el A-0, y en 1957 realizó el primer compilador para procesamiento de datos que usaba órdenes en inglés, el B-0 (FLOW-MATIC), utilizado principalmente para el cálculo de nóminas.
-
-Tras su experiencia con FLOW-MATIC, Hopper pensó que podía crearse un lenguaje de programación que usara órdenes en inglés y que sirviera para aplicaciones de negocios. Con esta idea, las bases para COBOL habían sido establecidas, y 2 años después se creó el comité que diseño este lenguaje</mutableString>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="yOG-Z5-VoJ"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="SWt-RF-UbC"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TpH-Oo-wNv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="UTL-HW-FoG" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="918" y="816"/>
+            <point key="canvasLocation" x="932" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="p1O-it-vJE"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="hopper" width="745" height="483"/>
         <image name="liskov" width="404" height="303"/>
