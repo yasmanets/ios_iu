@@ -17,11 +17,11 @@ class TableViewController: UITableViewController {
         
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
                 
-        var restaurant = Restaurant(name: "Pizzeria Tito's", type: "Pizzería", image: UIImage(named: "titos")!, bestPlates: nil, location: "Calle de prueba")
+        var restaurant = Restaurant(name: "Pizzeria Tito's", type: "Pizzería", image: UIImage(named: "titos")!, bestPlates: nil, phone: "123456789", web: "https://pizzeriatitosalicante.es/", location: "Calle Médico Vicente Reyes, 1, 03015 Alicante")
         restaurants.append(restaurant)
-        restaurant = Restaurant(name: "La Tía Juana", type: "Mexicano", image: UIImage(named: "tia-juana")!, bestPlates: ["Ensaladilla rusa", "Huevos rotos", "Croquetas", "Pizza Margarita"], location: "Calle de prueba 2")
+        restaurant = Restaurant(name: "La Tía Juana", type: "Mexicano", image: UIImage(named: "tia-juana")!, bestPlates: ["Ensaladilla rusa", "Huevos rotos", "Croquetas", "Pizza Margarita"], phone: "123456789", web: "https://latiajuanamx.com/", location: "Rambla Méndez Núñez, 45, 03002 Alicante")
         restaurants.append(restaurant)
-        restaurant = Restaurant(name: "Casa Yong", type: "Chino", image: UIImage(named: "casa-yong")!, bestPlates: nil, location: "Calle de pruebas 3")
+        restaurant = Restaurant(name: "Casa Yong", type: "Chino", image: UIImage(named: "casa-yong")!, bestPlates: nil, phone: "123456789", web: "http://casayong.es/", location: "Calle Hogar Provincial, 1, 03559 Alicante")
         restaurants.append(restaurant)
 
         // Uncomment the following line to preserve selection between presentations
@@ -94,6 +94,16 @@ class TableViewController: UITableViewController {
                 let restaurant = self.restaurants[indexPath.row]
                 let detailController = segue.destination as! DetailViewController
                 detailController.restaurant = restaurant
+            }
+        }
+    }
+    
+    @IBAction func unwindMainViewController(segue: UIStoryboardSegue) {
+        if let addController = segue.source as? AddRestaurantTableViewController {
+            print("addControler")
+            if let restaurant = addController.restaurant {
+                self.restaurants.append(restaurant)
+                self.tableView.reloadData()
             }
         }
     }

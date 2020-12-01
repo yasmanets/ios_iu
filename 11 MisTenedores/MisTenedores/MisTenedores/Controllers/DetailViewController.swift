@@ -51,9 +51,15 @@ class DetailViewController: UIViewController {
         if let reviewViewController = segue.source as? ReviewViewController {
             if let rating = reviewViewController.ratingSelected {
                 self.restaurant.rating = rating
-                print(self.restaurant.rating)
                 self.infoTableView.reloadData()
             }
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showMap" {
+            let destinationViewController = segue.destination as! MapViewController
+            destinationViewController.restaurant = self.restaurant
         }
     }
 }
@@ -66,7 +72,7 @@ extension DetailViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return 3
+            return 5
         case 1:
             if let bestPlates = restaurant.bestPlates?.count {
                 return bestPlates
@@ -98,6 +104,12 @@ extension DetailViewController: UITableViewDataSource {
                 case 2:
                     cell.keyLabel.text = "Dirección"
                     cell.valueLabel.text = self.restaurant.location
+                case 3:
+                    cell.keyLabel.text = "Teléfono"
+                    cell.valueLabel.text = self.restaurant.phone
+                case 4:
+                    cell.keyLabel.text = "Página web"
+                    cell.valueLabel.text = self.restaurant.web
                 default:
                     break
                 }
@@ -129,6 +141,41 @@ extension DetailViewController: UITableViewDelegate {
             break
         }
         return title
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+            case 2:
+                self.performSegue(withIdentifier: "showMap", sender: nil)
+            case 3:
+                self.createAlert()
+            case 4:
+                if let website = URL(string: self.restaurant.web) {
+                    let app = UIApplication.shared
+                    if app.canOpenURL(website) {
+                        app.open(website, options: [:], completionHandler: nil)
+                    }
+                }
+            default:
+                break
+        }
+    }
+    
+    private func createAlert() {
+        let alertController = UIAlertController(title: "Contactar con \(self.restaurant.name)", message: "¿Cómo quieres contactar?", preferredStyle: .actionSheet)
+        let callAction = UIAlertAction(title: "Llamar", style: .default, handler: { (action) in
+            if let phone = URL(string: "tel://\(self.restaurant.phone)") {
+                let app = UIApplication.shared
+                if app.canOpenURL(phone) {
+                    app.open(phone, options: [:], completionHandler: nil)
+                }
+            }
+        })
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
+        
+        alertController.addAction(callAction)
+        alertController.addAction(cancelAction)
+        self.present(alertController, animated: true, completion: nil)
     }
     
 }
