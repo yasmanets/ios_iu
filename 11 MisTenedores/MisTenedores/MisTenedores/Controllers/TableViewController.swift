@@ -17,11 +17,15 @@ class TableViewController: UITableViewController {
         
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
                 
-        var restaurant = Restaurant(name: "Pizzeria Tito's", type: "Pizzería", image: UIImage(named: "titos")!, bestPlates: nil, phone: "123456789", web: "https://pizzeriatitosalicante.es/", location: "Calle Médico Vicente Reyes, 1, 03015 Alicante")
+        var restaurant = Restaurant(name: "Pizzeria Tito's", type: "Pizzería", image: UIImage(named: "titos")!, bestPlates: ["Ensaladilla rusa", "Huevos rotos", "Croquetas", "Pizza Margarita"], phone: "123456789", web: "https://pizzeriatitosalicante.es/", location: "Calle Médico Vicente Reyes, 1, 03015 Alicante")
         restaurants.append(restaurant)
-        restaurant = Restaurant(name: "La Tía Juana", type: "Mexicano", image: UIImage(named: "tia-juana")!, bestPlates: ["Ensaladilla rusa", "Huevos rotos", "Croquetas", "Pizza Margarita"], phone: "123456789", web: "https://latiajuanamx.com/", location: "Rambla Méndez Núñez, 45, 03002 Alicante")
+        restaurant = Restaurant(name: "La Tía Juana", type: "Mexicano", image: UIImage(named: "tia-juana")!, bestPlates: ["Tacos", "Burritos", "Nachos"], phone: "123456789", web: "https://latiajuanamx.com/", location: "Rambla Méndez Núñez, 45, 03002 Alicante")
         restaurants.append(restaurant)
-        restaurant = Restaurant(name: "Casa Yong", type: "Chino", image: UIImage(named: "casa-yong")!, bestPlates: nil, phone: "123456789", web: "http://casayong.es/", location: "Calle Hogar Provincial, 1, 03559 Alicante")
+        restaurant = Restaurant(name: "Casa Yong", type: "Chino", image: UIImage(named: "casa-yong")!, bestPlates: ["Rollo de primavera", "Arroz Tres Delicia", "Ternera con Bambú"], phone: "965209283", web: "http://casayong.es/", location: "Calle Hogar Provincial, 1, 03559 Alicante")
+        restaurants.append(restaurant)
+        restaurant = Restaurant(name: "Templo", type: "Asador", image: UIImage(named: "templo")!, bestPlates: ["Cecina", "Steak Tartar", "Ensalada de perdiz escabechada"], phone: "965209283", web: "http://www.templorestaurante.com/", location: "Calle Periodista Pirula Arderius, 7, 03001 Alicante")
+        restaurants.append(restaurant)
+        restaurant = Restaurant(name: "La Fundición", type: "Asador", image: UIImage(named: "fundicion")!, bestPlates: ["Patatitas con boquerones y limón", "Mini crepa de marisco"], phone: "646932259", web: "https://www.https://lafundicionalicante.com/", location: "Carrer Poeta Pastor, 16, 03007 Alacant, Alicante")
         restaurants.append(restaurant)
 
         // Uncomment the following line to preserve selection between presentations
