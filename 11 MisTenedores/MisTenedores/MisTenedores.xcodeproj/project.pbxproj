@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4324A07425769CE400CF89C2 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4324A07325769CE400CF89C2 /* ReviewViewController.swift */; };
 		439E3C83257580F4002649BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E3C82257580F4002649BB /* AppDelegate.swift */; };
 		439E3C85257580F4002649BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E3C84257580F4002649BB /* SceneDelegate.swift */; };
 		439E3C8A257580F4002649BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 439E3C88257580F4002649BB /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4324A07325769CE400CF89C2 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		439E3C7F257580F4002649BB /* MisTenedores.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MisTenedores.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		439E3C82257580F4002649BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		439E3C84257580F4002649BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				439E3C9E2575856B002649BB /* TableViewCell.swift */,
 				439E3CA025764E01002649BB /* DetailViewController.swift */,
 				439E3CA22576578E002649BB /* DetailTableViewCell.swift */,
+				4324A07325769CE400CF89C2 /* ReviewViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				439E3C83257580F4002649BB /* AppDelegate.swift in Sources */,
 				439E3CA125764E01002649BB /* DetailViewController.swift in Sources */,
 				439E3C85257580F4002649BB /* SceneDelegate.swift in Sources */,
+				4324A07425769CE400CF89C2 /* ReviewViewController.swift in Sources */,
 				439E3C9D25758528002649BB /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

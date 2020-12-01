@@ -17,11 +17,11 @@ class TableViewController: UITableViewController {
         
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
                 
-        var restaurant = Restaurant(name: "Pizzeria Tito's", type: "Pizzería", image: UIImage(named: "titos")!, bestPlates: nil, location: "Calle de prueba", rating: "1")
+        var restaurant = Restaurant(name: "Pizzeria Tito's", type: "Pizzería", image: UIImage(named: "titos")!, bestPlates: nil, location: "Calle de prueba")
         restaurants.append(restaurant)
-        restaurant = Restaurant(name: "La Tía Juana", type: "Mexicano", image: UIImage(named: "tia-juana")!, bestPlates: ["Ensaladilla rusa", "Huevos rotos", "Croquetas", "Pizza Margarita"], location: "Calle de prueba 2", rating: "2")
+        restaurant = Restaurant(name: "La Tía Juana", type: "Mexicano", image: UIImage(named: "tia-juana")!, bestPlates: ["Ensaladilla rusa", "Huevos rotos", "Croquetas", "Pizza Margarita"], location: "Calle de prueba 2")
         restaurants.append(restaurant)
-        restaurant = Restaurant(name: "Casa Yong", type: "Chino", image: UIImage(named: "casa-yong")!, bestPlates: nil, location: "Calle de pruebas 3", rating: "3")
+        restaurant = Restaurant(name: "Casa Yong", type: "Chino", image: UIImage(named: "casa-yong")!, bestPlates: nil, location: "Calle de pruebas 3")
         restaurants.append(restaurant)
 
         // Uncomment the following line to preserve selection between presentations

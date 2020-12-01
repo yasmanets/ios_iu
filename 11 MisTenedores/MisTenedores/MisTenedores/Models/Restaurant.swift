@@ -14,14 +14,13 @@ class Restaurant {
     var image: UIImage!
     var bestPlates: [String]!
     var location: String
-    var rating: String!
+    var rating: String = "rating"
     
-    init(name: String, type: String, image: UIImage, bestPlates: [String]!, location: String, rating: String!) {
+    init(name: String, type: String, image: UIImage, bestPlates: [String]!, location: String) {
         self.name = name
         self.type = type
         self.image = image
         self.bestPlates = bestPlates
         self.location = location
-        self.rating = rating
     }
 }

@@ -46,6 +46,16 @@ class DetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func close(segue: UIStoryboardSegue) {
+        if let reviewViewController = segue.source as? ReviewViewController {
+            if let rating = reviewViewController.ratingSelected {
+                self.restaurant.rating = rating
+                print(self.restaurant.rating)
+                self.infoTableView.reloadData()
+            }
+        }
+    }
 }
 
 extension DetailViewController: UITableViewDataSource {
@@ -56,7 +66,7 @@ extension DetailViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return 2
+            return 3
         case 1:
             if let bestPlates = restaurant.bestPlates?.count {
                 return bestPlates
@@ -77,8 +87,15 @@ extension DetailViewController: UITableViewDataSource {
                 case 0:
                     cell.keyLabel.text = "Tipo"
                     cell.valueLabel.text = self.restaurant.type
-            
                 case 1:
+                    cell.keyLabel.text = "Valoración"
+                    if self.restaurant.rating == "rating" {
+                        cell.valueLabel.text = "Sin valorar"
+                    }
+                    else {
+                        cell.valueLabel.text = self.restaurant.rating
+                    }
+                case 2:
                     cell.keyLabel.text = "Dirección"
                     cell.valueLabel.text = self.restaurant.location
                 default:
