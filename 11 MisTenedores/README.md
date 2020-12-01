@@ -1,6 +1,8 @@
 # Práctica final, MisTenedores
 Capturas del ejercicio `MisTenedores`
 
+## Funcionalidades
+
 - Se pueden añadir nuevos restaurantes.
 - Se puede visualizar la información detallada de cada restaurante.
 - Se puede visitar la dirección a traves de `MapKit`.
@@ -12,4 +14,5 @@ Capturas del ejercicio `MisTenedores`
 ![Captura 3](https://github.com/yasmanets/ios_iu/blob/main/11%20MisTenedores/captures/tenedores3.png)
 ![Captura 4](https://github.com/yasmanets/ios_iu/blob/main/11%20MisTenedores/captures/tenedores4.png)
 ![Captura 5](https://github.com/yasmanets/ios_iu/blob/main/11%20MisTenedores/captures/tenedores5.png)
+![Captura 6](https://github.com/yasmanets/ios_iu/blob/main/11%20MisTenedores/captures/tenedores6.png)
 
