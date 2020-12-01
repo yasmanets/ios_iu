@@ -15,6 +15,8 @@
 		439E3C9A25758214002649BB /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E3C9925758214002649BB /* Restaurant.swift */; };
 		439E3C9D25758528002649BB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E3C9C25758528002649BB /* TableViewController.swift */; };
 		439E3C9F2575856B002649BB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E3C9E2575856B002649BB /* TableViewCell.swift */; };
+		439E3CA125764E01002649BB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E3CA025764E01002649BB /* DetailViewController.swift */; };
+		439E3CA32576578E002649BB /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E3CA22576578E002649BB /* DetailTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		439E3C9925758214002649BB /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		439E3C9C25758528002649BB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		439E3C9E2575856B002649BB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		439E3CA025764E01002649BB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		439E3CA22576578E002649BB /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 			children = (
 				439E3C9C25758528002649BB /* TableViewController.swift */,
 				439E3C9E2575856B002649BB /* TableViewCell.swift */,
+				439E3CA025764E01002649BB /* DetailViewController.swift */,
+				439E3CA22576578E002649BB /* DetailTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -162,7 +168,9 @@
 			files = (
 				439E3C9F2575856B002649BB /* TableViewCell.swift in Sources */,
 				439E3C9A25758214002649BB /* Restaurant.swift in Sources */,
+				439E3CA32576578E002649BB /* DetailTableViewCell.swift in Sources */,
 				439E3C83257580F4002649BB /* AppDelegate.swift in Sources */,
+				439E3CA125764E01002649BB /* DetailViewController.swift in Sources */,
 				439E3C85257580F4002649BB /* SceneDelegate.swift in Sources */,
 				439E3C9D25758528002649BB /* TableViewController.swift in Sources */,
 			);

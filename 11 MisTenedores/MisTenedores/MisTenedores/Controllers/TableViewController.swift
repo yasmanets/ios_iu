@@ -14,9 +14,12 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+                
         var restaurant = Restaurant(name: "Pizzeria Tito's", type: "Pizzería", image: UIImage(named: "titos")!, bestPlates: nil, location: "Calle de prueba", rating: "1")
         restaurants.append(restaurant)
-        restaurant = Restaurant(name: "La Tía Juana", type: "Mexicano", image: UIImage(named: "tia-juana")!, bestPlates: nil, location: "Calle de prueba 2", rating: "2")
+        restaurant = Restaurant(name: "La Tía Juana", type: "Mexicano", image: UIImage(named: "tia-juana")!, bestPlates: ["Ensaladilla rusa", "Huevos rotos", "Croquetas", "Pizza Margarita"], location: "Calle de prueba 2", rating: "2")
         restaurants.append(restaurant)
         restaurant = Restaurant(name: "Casa Yong", type: "Chino", image: UIImage(named: "casa-yong")!, bestPlates: nil, location: "Calle de pruebas 3", rating: "3")
         restaurants.append(restaurant)
@@ -30,6 +33,11 @@ class TableViewController: UITableViewController {
     
     override var prefersStatusBarHidden: Bool {
         return true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.hidesBarsOnSwipe = true
     }
 
     // MARK: - Table view data source
@@ -76,17 +84,17 @@ class TableViewController: UITableViewController {
     }
     
     // MARK: - UITableViewDelegate
-    
-    
+        
 
-    /*
+
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "showDetail" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let restaurant = self.restaurants[indexPath.row]
+                let detailController = segue.destination as! DetailViewController
+                detailController.restaurant = restaurant
+            }
+        }
     }
-    */
-
 }
